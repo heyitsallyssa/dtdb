@@ -1,12 +1,8 @@
-/*!
- * Start Bootstrap - Agency v4.0.0-beta (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
- */
+/*** hey thanks for looking at my code - Allyssa ***/
 
 body {
 	overflow-x: hidden;
-	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif
+	font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -17,11 +13,17 @@ a {
 	color: #545F66;
 }
 
+a:focus,
+a:hover,
+	{
+	color: #9241d2;
+}
+
 a.active,
 a:active,
-a:focus,
-a:hover {
-	color: #545F66
+	{
+	color: #9241d2;
+	text-decoration: none;
 }
 
 h1,
@@ -41,7 +43,7 @@ section {
 
 section h2.section-heading {
 	font-size: 40px;
-	margin-top: 0;
+	margin-top: 50px;
 	margin-bottom: 15px
 }
 
@@ -65,9 +67,9 @@ section h3.section-subheading {
 }
 
 ::selection {
-	background: #9241d2;
+	background: #CE345A;
 	text-shadow: none;
-    color: #fff;
+	color: #fff;
 }
 
 img::selection {
@@ -93,8 +95,8 @@ body {
 	text-transform: uppercase;
 	color: #fff;
 	border: 0;
-	background-color: rgba(255,255,255,0.15);
-    border: 1px solid #fff;
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid #fff;
 	font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: uppercase
 }
@@ -123,8 +125,8 @@ body {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-	color: #8332AC;
-    font-weight: 700;
+	color: #9241d2;
+	font-weight: 700;
 }
 
 @media (min-width:992px) {
@@ -160,13 +162,11 @@ body {
 header.masthead {
 	text-align: center;
 	color: #fff;
-	background-image: url('../img/header-bg.png');
-	background-attachment: scroll;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: #502274;
+	background: -moz-linear-gradient(top, #502274 30%, #502274 30%, #9241d2 100%);
+	background: -webkit-linear-gradient(top, #502274 30%, #502274 30%, #9241d2 100%);
+	background: linear-gradient(to bottom, #502274 30%, #502274 30%, #9241d2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#502274', endColorstr='#9241d2', GradientType=0);
 }
 
 header.masthead .intro-text {
@@ -179,25 +179,35 @@ header.masthead .intro-text .intro-lead-in {
 	line-height: 22px;
 	margin-bottom: 25px;
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: left;
+	text-align: center;
 }
 
 header.masthead .intro-text .intro-heading {
-	font-size: 50px;
+	font-size: 30px;
 	font-weight: 700;
-	line-height: 50px;
-    margin-bottom: 20px;
+	line-height: 39px;
+	margin-bottom: 20px;
 	font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-    text-align: left;
-
+	text-align: center;
 }
 
+.service-heading {
+	margin: 15px 0;
+	text-transform: none
+}
 
+.projects-heading {
+	margin: 15px 0;
+	text-transform: none
+}
+
+.giffy {
+	margin-bottom: 100px;
+}
 
 @media (min-width:768px) {
 	header.masthead .intro-text {
-		padding-top: 300px;
+		padding-top: 240px;
 		padding-bottom: 200px
 	}
 	header.masthead .intro-text .intro-lead-in {
@@ -205,18 +215,17 @@ header.masthead .intro-text .intro-heading {
 		line-height: 5px;
 		margin-bottom: 25px;
 		margin-top: 30px;
-		font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif
+		font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		text-align: center;
 	}
 	header.masthead .intro-text .intro-heading {
-		font-size: 75px;
+		font-size: 40px;
 		font-weight: 700;
-		line-height: 75px;
-        margin-bottom: 20px;
+		line-height: 44px;
+		margin-bottom: 20px;
 		font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		text-transform: uppercase
+		text-align: center;
 	}
-    
-    
 }
 
 header.blog-masthead {
@@ -241,22 +250,18 @@ header.blog-masthead .intro-text .intro-lead-in {
 	line-height: 22px;
 	margin-bottom: 25px;
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: left;
+	text-align: left;
 }
 
 header.blog-masthead .intro-text .intro-heading {
 	font-size: 50px;
 	font-weight: 700;
 	line-height: 50px;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 	font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
-    text-align: left;
-
-
+	text-align: left;
 }
-
-
 
 @media (min-width:768px) {
 	header.blog-masthead .intro-text {
@@ -274,21 +279,22 @@ header.blog-masthead .intro-text .intro-heading {
 		font-size: 75px;
 		font-weight: 700;
 		line-height: 75px;
-        margin-bottom: 20px;
+		margin-bottom: 20px;
 		font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		text-transform: uppercase
 	}
 }
 
-.service-heading {
-	margin: 15px 0;
-	text-transform: none
+@media (max-width:768px) {
+	.giffy {
+		margin-bottom: 40px;
+		width: 75%;
+	}
 }
 
 #portfolio .portfolio-item {
 	right: 0;
 	margin: 0 0 15px;
-
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -361,7 +367,6 @@ header.blog-masthead .intro-text .intro-heading {
 	#portfolio .portfolio-item {
 		margin: 0 0 30px
 	}
-    
 }
 
 .portfolio-modal .modal-dialog {
@@ -399,8 +404,8 @@ header.blog-masthead .intro-text .intro-heading {
 .portfolio-modal .modal-content ul.list-inline {
 	margin-top: 0;
 	margin-bottom: 30px;
-    color: #3f3f3f!important;
-    font-weight: 100;
+	color: #3f3f3f!important;
+	font-weight: 100;
 }
 
 .portfolio-modal .modal-content img {
@@ -723,7 +728,8 @@ section#contact .text-danger {
 
 footer {
 	padding: 25px 0;
-	text-align: center
+	text-align: center;
+	background: #502274;
 }
 
 footer span.copyright {
@@ -731,16 +737,18 @@ footer span.copyright {
 	line-height: 40px;
 	text-transform: none;
 	font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	text-transform: uppercase
+	text-transform: uppercase;
+	color: #fff;
 }
 
-footer ul.quicklinks {
+footer a {
 	font-size: 90%;
 	line-height: 40px;
 	margin-bottom: 0;
 	text-transform: none;
 	font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	text-transform: uppercase
+	text-transform: uppercase;
+	color: #fff;
 }
 
 ul.social-buttons {
@@ -793,10 +801,9 @@ ul.social-buttons li a:hover {
 }
 
 .btn-primary:hover {
-    background-color: rgba(255,255,255,0.15);
-    border: 1px solid #fff;
-    color: #ddd;
-
+	border-color: #8332AC;
+	background-color: rgba(255, 255, 255, 0.15);
+	color: #8332AC;
 }
 
 .btn-primary.active,
@@ -816,9 +823,9 @@ ul.social-buttons li a:hover {
 .open>.btn-primary.dropdown-toggle.focus,
 .open>.btn-primary.dropdown-toggle:focus,
 .open>.btn-primary.dropdown-toggle:hover {
-	background-color: rgba(255,255,255,0.15);
-    border: 1px solid #fff;
-    color: #fff;
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid #fff;
+	color: #fff;
 }
 
 .btn-primary.active,
@@ -836,17 +843,17 @@ ul.social-buttons li a:hover {
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-	background-color: rgba(255,255,255,0.15);
-    border: 1px solid #fff;
-    color: #fff;
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid #fff;
+	color: #fff;
 }
 
 .btn-primary .badge {
-	background-color: rgba(255,255,255,0.15);
-    border: 1px solid #fff;
-    font-size: 13px;
-    line-height: 1.1;
-    text-align: center;
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid #fff;
+	font-size: 13px;
+	line-height: 1.1;
+	text-align: center;
 }
 
 .btn-xl {
@@ -854,9 +861,9 @@ fieldset[disabled] .btn-primary:hover {
 	font-weight: 300;
 	padding: 10px 20px;
 	border-radius: 3px;
-    background-color: rgba(255,255,255,0.15);
-    border: 1px solid #fff;
-    color: #fff;
+	background-color: #8332AC;
+	border: 1px solid #fff;
+	color: #fff;
 	font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 }
@@ -865,58 +872,125 @@ fieldset[disabled] .btn-primary:hover {
 .btn-xl:focus {
 	border-color: #8332AC;
 	background-color: #8332AC;
-    color: #fff;
+	color: #fff;
 }
 
 .btn-xl:hover {
 	border-color: #8332AC;
-	background-color: #8332AC;
-    color: #fff;
+	background-color: rgba(255, 255, 255, 0.15);
+	color: #8332AC;
 }
 
-.btn-xl.active,
-.btn-xl:active,
-.open>.btn-xl.dropdown-toggle {
+/***form***/
+
+/* SECTION WRAPPER */
+
+.wrapper {
+	width: 50%;
+	margin: 0 auto;
+}
+
+form p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+form p,
+label[for="name"],
+label[for="email"],
+label[for="phone-number"],
+label[for="postal-code"],
+label[for="message"] {
+	padding-bottom: 6px;
+	padding-right: 10px;
+	display: block;
+}
+
+lablel[for="name"] {
+	display: block;
+}
+
+/* SECTION */
+
+section {
+	padding: 20px 0;
+	text-align: left!important;
+}
+
+/* FORM STYLES */
+
+.input-wrap {
+	margin-bottom: 10px;
+}
+
+select {
+	margin-bottom: 50px;
+}
+
+label[for="message"] {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+input[type="text"],
+textarea {
+	width: 100%;
+	padding: 6px;
+	font-size: 16px;
+	border: 1px solid #2b293c;
+	background: #fbf9f7;
+	margin-bottom: 20px;
+}
+
+input[type="text"] {
+	width: 100%;
+}
+
+.input-wrap.select-box {
+	border: 1px solid #2b293c;
+	background: #fbf9f7;
+	width: 50%;
+	height: 34px;
+	padding: 0px 10px;
+	margin-bottom: 50px;
+}
+
+textarea {
+	min-height: 100px;
+}
+
+select {
+	border: none;
+	background: transparent;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 0.5px;
+	height: 34px;
+	width: 100%;
+}
+
+select:hover {
+	cursor: pointer;
+}
+
+input[type="submit"] {
+	margin: 0px 0px 30px 0px;
+	height: 34px;
+	width: 125px;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 0.5px;
+	background: #8332AC;
+	border: 0px solid;
 	color: #fff;
-	border-color: #545F66;
-	background-color: #545F66
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1.25px;
+	display: inherit;
 }
 
-.btn-xl.active.focus,
-.btn-xl.active:focus,
-.btn-xl.active:hover,
-.btn-xl:active.focus,
-.btn-xl:active:focus,
-.btn-xl:active:hover,
-.open>.btn-xl.dropdown-toggle.focus,
-.open>.btn-xl.dropdown-toggle:focus,
-.open>.btn-xl.dropdown-toggle:hover {
-	color: #fff;
-	border-color: #007bff;
-	background-color: #dcab01
+input[type="submit"]:hover {
+	border-color: #8332AC;
+	background-color: rgba(255, 255, 255, 0.15);
+	color: #8332AC;
 }
-
-.btn-xl.active,
-.btn-xl:active,
-.open>.btn-xl.dropdown-toggle {
-	background-image: none
-}
-
-.btn-xl.disabled.focus,
-.btn-xl.disabled:focus,
-.btn-xl.disabled:hover,
-.btn-xl[disabled].focus,
-.btn-xl[disabled]:focus,
-.btn-xl[disabled]:hover,
-fieldset[disabled] .btn-xl.focus,
-fieldset[disabled] .btn-xl:focus,
-fieldset[disabled] .btn-xl:hover {
-	border-color: #fff;
-	background-color: #fff;
-}
-
-.btn-xl .badge {
-	color: #545F66;
-	background-color: #fff
-}
-
